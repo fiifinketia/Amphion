@@ -3,7 +3,7 @@
 	"model_type": "VITS",
 	"dataset": ["UGSpeechAT"],
 	"dataset_path": {
-		"UGSpeechAT": ""
+		"LJSpeech": ""
 	},
 	"log_dir": "ckpts/tts",
 	"preprocess": {

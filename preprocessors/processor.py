@@ -30,6 +30,7 @@ from preprocessors import (
     ljspeech_vocoder,
     librilight,
     hifitts,
+    ugspeech_at,
 )
 
 
@@ -84,6 +85,8 @@ def preprocess_dataset(
         cdmusiceval.main(output_path, dataset_path)
     if dataset == "LJSpeech":
         ljspeech.main(output_path, dataset_path, cfg)
+    if dataset == "UGSpeechAT":
+        ugspeech_at.main(output_path, dataset_path, cfg)
     if dataset == "ljspeech":
         ljspeech_vocoder.main(output_path, dataset_path)
     if dataset == "coco":
